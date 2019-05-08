@@ -1,0 +1,60 @@
+.banner-container{
+    position: relative;
+    .p-banner{
+        position: relative;
+        img{
+            width: 100%;
+            min-height: 100vh;
+        }
+        .baner-content{
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            top: 40%;
+            left: 0;
+            width: 100%;
+            .p-title{
+                margin-bottom: 60px;
+                .heading-2{
+                    @include rem('font-size',60);
+                    color: #fff;
+                    font-family: "Lato Reg";
+                    font-weight: 400;
+                    text-transform: uppercase;
+                }
+                &:after{
+                    content: " ";
+                    position: absolute;
+                    top: 30%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    width: 200px;
+                    height: 5px;
+                    background-color:#2ecc71;
+                }
+            }
+            .p-description{
+                padding: 0 30%;
+                margin-bottom: 30px;
+                .text{
+                    @include rem('font-size',18);
+                    color: #fff;
+                    font-family: "Lato Reg";
+                }
+            }
+            .btn-learn{
+                button{
+                    padding: 10px 30px;
+                    border: 3px solid #fff;
+                    background-color: rgba(0, 0, 0, 0.1);
+                    @include rem('font-size',18);
+                    color: #fff;
+                    font-family: "Lato Reg";
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}

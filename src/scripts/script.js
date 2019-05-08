@@ -1,6 +1,6 @@
 //header
-$(document).ready(function(){
-    $(window).scroll(function(){
+$(document).ready(function () {
+    $(window).scroll(function () {
         var scroll = $(window).scrollTop();
         var opacity = 0;
         if (scroll < 100) {
@@ -12,4 +12,13 @@ $(document).ready(function(){
             $("#header-container").css('background-color', 'rgba(255,255,255,' + opacity + ')');
         }
     })
+    $('.banner-container').slick({
+        dots: true,
+        infinite: true,
+        autoplay: true,
+        speed: 500,
+        slidesToShow: 1,
+        adaptiveHeight: true
+    });
+
 });

@@ -1,5 +1,10 @@
 .header-container {
   padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
   .p-logo {
     .heading-1 {
       text-transform: uppercase;
