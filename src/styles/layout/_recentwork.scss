@@ -9,7 +9,7 @@
         content: "";
         width: 280px;
         height: 90px;
-        background-color: #2ecc71;
+        background-color: $cl-main;
         position: absolute;
         left: 38%;
         top: 50px;
@@ -24,7 +24,7 @@
       font-family: "Lato Reg";
       text-transform: capitalize;
       font-weight: 400;
-      color: #fff;
+      color: $cl-wh;
     }
   }
   .menu-recent{
@@ -39,7 +39,7 @@
               @include rem('font-size',14);
               font-family: "Lato Bold";
               &:hover{
-                  color: #2ecc71;
+                  color: $cl-main;
               }
           }
       }
@@ -84,12 +84,12 @@
           font-family: "Mariad Pro Regular";
           text-transform: capitalize;
           margin-bottom: 10px;
-          color: #fff;
+          color: $cl-wh;
           &:after {
             content: "";
             width: 50px;
             height: 3px;
-            background-color: #2ecc71;
+            background-color: $cl-main;
             position: absolute;
             top: 50%;
             left: 0;
@@ -98,7 +98,7 @@
         .sp-text {
           @include rem("font-size", 14);
           font-family: "Mariad Pro Regular";
-          color: #fff;
+          color: $cl-wh;
         }
       }
     }

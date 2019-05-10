@@ -8,7 +8,7 @@
         content: " ";
         width: 240px;
         height: 80px;
-        background-color: #2ecc71;
+        background-color: $cl-main;
         position: absolute;
         top: 46px;
         left: 39%;
@@ -21,7 +21,7 @@
       font-family: "Lato Reg";
       text-transform: capitalize;
       font-weight: 400;
-      color: #fff;
+      color: $cl-wh;
       left: 42%;
     }
   }
@@ -34,7 +34,7 @@
           content: " ";
           width: 450px;
           height: 450px;
-          background-color: #2ecc71;
+          background-color: $cl-main;
           position: absolute;
           left: 0;
           top: 0;
@@ -60,7 +60,7 @@
           content: " ";
           width: 55px;
           height: 3px;
-          background-color: #2ecc71;
+          background-color: $cl-main;
           position: absolute;
           left: 3%;
           top: 12%;
@@ -84,7 +84,7 @@
           font-family: "Mariad Pro Regular";
           color: rgb(187, 187, 187);
           span {
-            color: #000;
+            color: $cl-bl;
           }
         }
         &::after {
@@ -92,7 +92,7 @@
           width: 90px;
           height: 3px;
           transform: rotate(90deg);
-          background-color: #2ecc71;
+          background-color: $cl-main;
           position: absolute;
           left: -7%;
           top: 46%;
@@ -102,7 +102,7 @@
         button {
           padding: 10px 20px;
           background-color: rgba(0, 0, 0, 0.01);
-          border: 2px solid #000;
+          border: 2px solid $cl-bl;
           @include rem("font-size", 18);
           font-family: "Mariad Pro Regular";
         }
@@ -110,5 +110,3 @@
     }
   }
 }
-
-  
