@@ -1,0 +1,22 @@
+.parallax {
+  .p-parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-size: color;
+    background-repeat: no-repeat;
+    position: relative;
+    .logo-img {
+      padding: 130px;
+      .p-logo-img{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0 220px;
+      }
+    }
+  }
+}
