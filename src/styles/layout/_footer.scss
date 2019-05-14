@@ -12,7 +12,7 @@
     }
     .icon {
       position: absolute;
-      top: -10px;
+      top: -10px;   
       left: 48.2%;
       .fas {
         @include rem("font-size", 20);
@@ -41,9 +41,12 @@
       @include rem("font-size", 14);
       color: $cl-bb;
       font-family: "Mariad Pro Regular";
+      &:hover{
+        color: $cl-main;
+      }
     }
     .active {
-      margin-bottom: 10px;
+      margin-bottom: 5px;
     }
   }
   .recentnew {
@@ -114,6 +117,9 @@
         @include rem("font-size", 16);
         color: $cl-bb;
         font-family: "Mariad Pro Regular";
+        &:hover{
+          color: $cl-main;
+        }
       }
     }
   }
