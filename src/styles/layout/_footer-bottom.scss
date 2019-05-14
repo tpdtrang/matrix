@@ -1,0 +1,30 @@
+.footer-bottom {
+  background-color: #0f0f15;
+  .p-menu {
+    .item-menu {
+      display: inline-block;
+      padding: 20px 10px 20px 0;
+      .link-menu {
+        @include rem("font-size", 16);
+        font-family: "Lato Bold";
+        text-transform: uppercase;
+        color: $cl-wh;
+        &:hover {
+          color: #2ecc71;
+        }
+      }
+    }
+  }
+  .footer-right {
+    text-align: right;
+    padding-top: 20px;
+    .text {
+      @include rem("font-size", 12);
+      font-family: "Lato Bold";
+      color: $cl-wh;
+      .sp-text {
+        @include rem("font-size", 12);
+      }
+    }
+  }
+}
