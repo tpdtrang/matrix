@@ -1,0 +1,143 @@
+.pricingtable-container {
+  padding: 100px 0;
+  .p-pricingtable {
+    padding: 0 20px;
+    .p-title {
+      position: relative;
+      padding: 100px 0;
+      margin-top: 50px;
+      margin-bottom: 60px;
+      .back-title {
+        &::after {
+          content: "";
+          width: 280px;
+          height: 90px;
+          background-color: $cl-main;
+          position: absolute;
+          left: 38%;
+          top: 50px;
+          transform: rotate(-8deg);
+        }
+      }
+      .heading-2 {
+        position: absolute;
+        left: 40%;
+        top: 70px;
+        @include rem("font-size", 40);
+        font-family: "Lato Reg";
+        text-transform: capitalize;
+        font-weight: 400;
+        color: $cl-wh;
+      }
+    }
+    .p-content {
+      .pricing-item {
+        .p-back {
+          width: 100%;
+          height: 150px;
+          background-position: center;
+          background-size: 100% 100%;
+          background-repeat: no-repeat;
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0px;
+            right: 0;
+            border-bottom: 35px solid #eaeaea;
+            border-right: 0 solid transparent;
+            border-left: 350px solid transparent;
+          }
+          .back-text {
+            @include flexbox;
+            @include align-items(center);
+            @include justify-content(center);
+            @include flex-direction(column);
+            position: absolute;
+            top: 44%;
+            left: 40%;
+            .heading-3 {
+              @include rem("font-size", 20);
+              text-transform: uppercase;
+              color: $cl-wh;
+              font-family: "Mariad Pro Regular";
+              display: none;
+            }
+          }
+          &:before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: none;
+          }
+          &:hover {
+            cursor: pointer;
+            .heading-3 {
+              display: block;
+            }
+            &:before {
+              display: block;
+            }
+          }
+        }
+        .content {
+          background-color: #eaeaea;
+          padding: 30px 0;
+          text-align: center;
+          .date {
+            margin-bottom: 50px;
+            position: relative;
+            .heading-h4 {
+              color: #393c41;
+              @include rem("font-size", 60);
+              font-family: "Mariad Pro Bold";
+              letter-spacing: 0.2;
+              position: relative;
+              .sp-dola {
+                @include rem("font-size", 24);
+                position: absolute;
+                top: 10px;
+                left: 20%;
+              }
+              .sp-date {
+                @include rem("font-size", 24);
+              }
+            }
+            &:after {
+              content: "";
+              width: 80px;
+              height: 3px;
+              background-color: #2ecc71;
+              position: absolute;
+              left: 40%;
+              top: 100%;
+            }
+          }
+          .text {
+            margin-bottom: 35px;
+            .text-content {
+              @include rem("font-face", 16);
+              font-family: "Mariad Pro Regular";
+              color: $cl-bb;
+            }
+          }
+          .btn-purchase {
+            button {
+              background-color: $cl-main;
+              padding: 10px 40px;
+              border: none;
+              font-family: "Mariad Pro Regular";
+              @include rem("font-size", 18);
+              color: $cl-wh;
+            }
+          }
+        }
+      }
+    }
+  }
+}
