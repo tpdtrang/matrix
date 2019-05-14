@@ -1,0 +1,101 @@
+.ournew-container {
+  padding: 50px 0;
+  .p-title {
+    padding: 100px 0;
+    margin-bottom: 20px;
+    position: relative;
+    .back-title {
+      &::after {
+        content: " ";
+        width: 240px;
+        height: 80px;
+        background: $cl-main;
+        position: absolute;
+        top: 60px;
+        left: 37%;
+        transform: rotate(-8deg);
+      }
+    }
+    .heading-2 {
+      position: absolute;
+      top: 78px;
+      left: 40%;
+      @include rem("font-size", 40);
+      font-family: "Lato Reg";
+      font-weight: 400;
+      color: $cl-wh;
+    }
+  }
+  .p-content {
+      padding: 0 20px;
+    .ournew-item {
+      .p-back {
+        width: 340px;
+        height: 340px;
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        position: relative;
+        margin-bottom: 20px;
+        .back-text {
+          text-align: center;
+          background: rgba(81, 252, 147, 0.57);
+          position: relative;
+          top: 45%;
+          padding: 20px;
+          display: none;
+          .heading-5 {
+            text-transform: uppercase;
+            color: $cl-wh;
+            font-family: "Lato Reg";
+            font-weight: 600;
+          }
+        }
+        &::after {
+          content: " ";
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.4);
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: none;
+        }
+        &:hover {
+            cursor: pointer;
+          &::after {
+            display: block;
+          }
+          .back-text {
+            display: block;
+          }
+        }
+      }
+      .title {
+          margin-bottom: 20px;
+        .heading-3 {
+          @include rem("font-size", 24);
+          color: #393c41;
+          font-family: "Mariad Pro Bold";
+          text-transform: uppercase;
+          &:hover{
+              cursor: pointer;
+            color: $cl-main;
+          }
+        }
+        .sp-date{
+            @include rem("font-size", 14);
+            color: #bbbbbb;
+            font-family: "Mariad Pro Regular";
+        }
+      }
+      .text{
+          .text-content{
+            @include rem("font-size", 16);
+            color: #bbbbbb;
+            font-family: "Mariad Pro Regular";
+          }
+      }
+    }
+  }
+}
+

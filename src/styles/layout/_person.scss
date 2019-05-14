@@ -1,0 +1,40 @@
+.person-container {
+  padding: 100px 0;
+  .p-person {
+    width: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    .p-text {
+      width: 40%;
+      height: auto;
+      position: relative;
+      left: 60%;
+      padding: 120px 0;
+      .icon {
+          margin-bottom: 40px;
+      }
+      .text {
+          margin-bottom: 30px;
+        .text-content {
+          @include rem("font-size", 15);
+          font-family: "Mariad Pro Regular";
+          color: #6a717c;
+          line-height: 1.2;
+        }
+      }
+      .name {
+        text-align: right;
+        .name-content {
+          @include rem("font-size", 30);
+          font-family: "Mariad Pro Regular";
+          color: #393c41;
+        }
+        .sp-name {
+          @include rem("font-size", 14);
+          font-family: "Mariad Pro Regular";
+          color: #aaaaaa;
+        }
+      }
+    }
+  }
+}

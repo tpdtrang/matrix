@@ -3,6 +3,34 @@
 // ----------------------------------------------------------------------
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&subset=vietnamese');
 
+@font-face{
+    font-family: "Lato Light";
+    src:url("../fonts/Lato-Lig.ttf");
+}
+@font-face{
+    font-family: "Lato Bold";
+    src:url("../fonts/Lato-BolIta.ttf");
+}
+@font-face{
+    font-family: "Lato Reg";
+    src:url("../fonts/Lato-Reg.ttf");
+}
+@font-face{
+    font-family: "Lato Bold";
+    src:url("../fonts/Lato-Bold.ttf");
+}
+@font-face{
+    font-family: "Roboto Bold";
+    src:url("../fonts/Roboto-Bold.ttf");
+}
+@font-face{
+    font-family: "Mariad Pro Bold";
+    src: url("../fonts/Myriad\ Pro\ Bold\ SemiExtended.ttf");
+}
+@font-face{
+    font-family: "Mariad Pro Regular";
+    src:url("../fonts/Myriad\ Pro\ Regular.ttf");
+}
 // ----------------------------------------------------------------------
 // Base
 // ----------------------------------------------------------------------
@@ -18,7 +46,19 @@
 // Layout
 // ----------------------------------------------------------------------
 @import "layout/header";
+@import "layout/banner";
+@import "layout/aboutus";
+@import "layout/choose-aboutus";
+@import "layout/recentwork";
+@import "layout/ournew";
+@import "layout/person";
+@import "layout/ourteam";
+@import "layout/parallax";
+@import "layout/pricingtable";
 @import "layout/footer";
+@import "layout/footer-bottom";
+@import "layout/slick-theme";
+@import "layout/slick";
 
 // ----------------------------------------------------------------------
 // Custom

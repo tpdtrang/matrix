@@ -1,0 +1,114 @@
+.aboutus-container {
+  .p-title {
+    position: relative;
+    padding: 60px 0;
+    margin-bottom: 50px;
+    .back-title {
+      &::after {
+        content: " ";
+        width: 240px;
+        height: 80px;
+        background-color: $cl-main;
+        position: absolute;
+        top: 46px;
+        left: 39%;
+        transform: rotate(-8deg);
+      }
+    }
+    .heading-2 {
+      position: absolute;
+      @include rem("font-size", 40);
+      font-family: "Lato Reg";
+      text-transform: capitalize;
+      font-weight: 400;
+      color: $cl-wh;
+      left: 42%;
+    }
+  }
+  .content-aboutus {
+    padding: 40px 0;
+    .p-aboutus-left {
+      .back-img {
+        position: relative;
+        &::after {
+          content: " ";
+          width: 450px;
+          height: 450px;
+          background-color: $cl-main;
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+      }
+      img {
+        height: 450px;
+        width: 450px;
+        position: absolute;
+        top: 68px;
+        left: 80px;
+      }
+    }
+    .p-aboutus-right {
+      .title {
+        margin-bottom: 70px;
+        .heading-3 {
+          @include rem("font-size", 30);
+          font-family: "Lato Reg";
+          color: rgb(57, 60, 65);
+        }
+        &::after {
+          content: " ";
+          width: 55px;
+          height: 3px;
+          background-color: $cl-main;
+          position: absolute;
+          left: 3%;
+          top: 12%;
+        }
+      }
+      .text {
+        margin-bottom: 58px;
+        .text-content {
+          @include rem("font-size", 16);
+          font-family: "Mariad Pro Regular";
+          color: rgb(187, 187, 187);
+          line-height: 1.5;
+        }
+      }
+      .skill {
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 50px;
+        .skill-content {
+          @include rem("font-size", 20);
+          font-family: "Mariad Pro Regular";
+          color: rgb(187, 187, 187);
+          span {
+            color: $cl-bl;
+          }
+        }
+        &::after {
+          content: " ";
+          width: 90px;
+          height: 3px;
+          transform: rotate(90deg);
+          background-color: $cl-main;
+          position: absolute;
+          left: -7%;
+          top: 46%;
+        }
+      }
+      .btn-browse {
+        button {
+          padding: 10px 20px;
+          background-color: rgba(0, 0, 0, 0.01);
+          border: 2px solid $cl-bl;
+          @include rem("font-size", 18);
+          font-family: "Mariad Pro Regular";
+        }
+      }
+    }
+  }
+}
+
+
