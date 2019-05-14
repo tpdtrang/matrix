@@ -39,20 +39,28 @@
         position: relative;
         .icon {
           position: relative;
-          top: 50%;
-          left: 28%;
-          display: none;
-          .fab {
-            padding: 5px;
-            color: $cl-main;
-            font-size: 24px;
+          top: 44%;
+          left: 22%;
+         display: none;
+          .item-icon{
+            display: inline;
+            background-color: $cl-main;
+            padding: 12px 4px ;
+            .item{
+              .fab {
+                padding: 5px;
+                color: $cl-wh;
+               @include rem('font-size',20);
+              }
+            }
+           
           }
         }
         &:after {
           content: "";
           height: 100%;
           width: 100%;
-          background-color: rgba(124, 245, 170, 0.57);
+          background-color: rgba(159, 252, 195, 0.57);
           position: absolute;
           top: 0;
           left: 0;

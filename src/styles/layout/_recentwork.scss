@@ -1,5 +1,5 @@
 .recentwork-container {
-    padding: 30px 0;
+  padding: 30px 0;
   .p-title {
     position: relative;
     padding: 100px 0;
@@ -19,7 +19,7 @@
     .heading-2 {
       position: absolute;
       left: 40%;
-      top:70px;
+      top: 70px;
       @include rem("font-size", 40);
       font-family: "Lato Reg";
       text-transform: capitalize;
@@ -27,22 +27,22 @@
       color: $cl-wh;
     }
   }
-  .menu-recent{
-      text-align: center;
-      margin-bottom: 20px;
-      .item-menu{
-          display: inline-block;
-          padding: 20px;
-          .link-menu{
-              text-transform: uppercase;
-              color: #393c41;
-              @include rem('font-size',14);
-              font-family: "Lato Bold";
-              &:hover{
-                  color: $cl-main;
-              }
-          }
+  .menu-recent {
+    text-align: center;
+    margin-bottom: 20px;
+    .item-menu {
+      display: inline-block;
+      padding: 20px;
+      .link-menu {
+        text-transform: uppercase;
+        color: #393c41;
+        @include rem("font-size", 14);
+        font-family: "Lato Bold";
+        &:hover {
+          color: $cl-main;
+        }
       }
+    }
   }
   .content-recent {
     display: flex;
@@ -50,7 +50,7 @@
     .p-back {
       position: relative;
       width: 25%;
-      height: 375px;
+      height: 338px;
       background-size: 100% 100%;
       background-repeat: no-repeat;
       transition: all 0.5s ease-in-out;

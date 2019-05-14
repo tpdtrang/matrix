@@ -1,5 +1,5 @@
 .person-container {
-  padding: 50px 0;
+  padding: 100px 0;
   .p-person {
     width: 100%;
     background-size: 100% 100%;
@@ -9,12 +9,12 @@
       height: auto;
       position: relative;
       left: 60%;
-      padding: 150px 0;
+      padding: 120px 0;
       .icon {
           margin-bottom: 40px;
       }
       .text {
-          margin-bottom: 40px;
+          margin-bottom: 30px;
         .text-content {
           @include rem("font-size", 15);
           font-family: "Mariad Pro Regular";
@@ -38,18 +38,3 @@
     }
   }
 }
-// .parallax {
-//   .p-parallax {
-//     height: 50vh;
-//     background-attachment: fixed;
-//     background-position: center;
-//     background-size: color;
-//     background-repeat: no-repeat;
-//     .logo-img {
-//       width: 16%;
-//       height: 8px;
-//       .item-logo {
-//       }
-//     }
-//   }
-// }
