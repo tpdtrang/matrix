@@ -23,6 +23,14 @@
     font-family: "Roboto Bold";
     src:url("../fonts/Roboto-Bold.ttf");
 }
+@font-face{
+    font-family: "Mariad Pro Bold";
+    src: url("../fonts/Myriad\ Pro\ Bold\ SemiExtended.ttf");
+}
+@font-face{
+    font-family: "Mariad Pro Regular";
+    src:url("../fonts/Myriad\ Pro\ Regular.ttf");
+}
 // ----------------------------------------------------------------------
 // Base
 // ----------------------------------------------------------------------
@@ -40,6 +48,9 @@
 @import "layout/header";
 @import "layout/banner";
 @import "layout/aboutus";
+
+@import "layout/choose-aboutus";
+@import "layout/recentwork";
 @import "layout/footer";
 @import "layout/slick-theme";
 @import "layout/slick";
